@@ -16,12 +16,11 @@ void controlerJeuSouris() {
       etatJeu=EXTRA;
     }
     if (overRect(width/50, height/21, textWidth("Non a jour: cliquez ici pour mettre a jour"), textAscent())==true) {
-      link("https://drive.google.com/folderview?id=0B79wHwfMj4bGU1p6bGIzdkQzeFE&usp=sharing");
+      link("https://github.com/N3ROO/Blackjack");
     }
 
     
     break; 
-    //26, 1.23
 
 
   case MISE:

@@ -262,9 +262,11 @@ void mousePressed() {
   if (son==1) {
     hit.play(0);
   }
+  /*
   if (mouseX!=0 && mouseY!=0) {
     println(width/mouseX+","+width%mouseX+" "+height/mouseY+","+height%mouseY); //aide pour chercher des valeurs pour du positionnement(hitbox, image...)
   }
+  */
 }
 
   
@@ -289,11 +291,11 @@ void setup() {
   hitm.resize(70, 70);
   
   // Test pour vérifier si le fichier en ligne est dispo, si oui, sauvegarde dans un fichier local
- if (loadStrings("http://dl.dropboxusercontent.com/u/104417097/version.txt")==null) {
+ if (loadStrings("http://n3rosoftwares.pagesperso-orange.fr/versions/versionBJ.txt")==null) {
    println("Lien online innacessible");
  }else{
    println("Lien online accessible");
-  saveStrings("/data/versionOnline.txt", loadStrings("http://dl.dropboxusercontent.com/u/104417097/version.txt"));
+   saveStrings("/data/versionOnline.txt", loadStrings("http://n3rosoftwares.pagesperso-orange.fr/versions/versionBJO.txt"));
  }
   
   // Les polices d'écriture
